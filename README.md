@@ -12,6 +12,14 @@ pip install high_lvl_networking
 
 ## Usage
 
+### Server
+
 ```python
-from high_lvl_networking import Client, Server
+from high_lvl_networking import Server
+```
+
+### Client
+
+```python
+from high_lvl_networking import Client
 ```
