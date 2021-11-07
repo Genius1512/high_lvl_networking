@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: high-lvl-networking
-Version: 0.1.1
+Version: 0.1.2
 Summary: High level library to setup networking
 Home-page: UNKNOWN
 Author: Silvan Schmidt
@@ -8,5 +8,5 @@ License: MIT
 Platform: UNKNOWN
 License-File: LICENSE.txt
 
-UNKNOWN
+High level library to simplify communication between multiple devices
 

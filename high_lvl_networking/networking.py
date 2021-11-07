@@ -11,13 +11,16 @@
 #    get() -> tries to get a message from the server
 #    post() -> sends a message to the server
 
+# TODO: update pypi
+
 from socket import *
 from pickle import loads, dumps
 from typing import Any
 
 
 class NetworkingException(Exception):
-    pass
+    def __str__(self):
+        return 'high_lvl_networking.NetworkingException'
 
 
 class Server:
@@ -62,6 +65,9 @@ class Server:
         if self.debug:
             print(string)
 
+    def __str__(self):
+        return f'<Networking Server ip={self.ip} port={self.port}>'
+
 
 class Client:
     def __init__(self, debug: bool = True) -> None:
@@ -97,3 +103,6 @@ class Client:
     def print(self, string):
         if self.debug:
             print(string)
+
+    def __str__(self):
+        return f'<Networking Client ip={self.ip} port={self.port}>'
